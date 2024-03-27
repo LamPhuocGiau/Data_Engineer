@@ -66,5 +66,5 @@ arepas_place = Franchise("189 Fitzgerald Avenue", [arepas_menu])
 
 business = Business("Take a' Arepa", arepas_place)
 
-
+print("Thank you for your review!")
 
