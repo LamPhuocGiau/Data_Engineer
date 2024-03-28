@@ -6,7 +6,6 @@ def word_length_dictionary(words):
     expected_dictionary.update({word:num_word})
   return expected_dictionary
 
-
 print(word_length_dictionary(["apple", "dog", "cat"]))
 # should print {"apple":5, "dog": 3, "cat":3}
 print(word_length_dictionary(["a", ""]))
