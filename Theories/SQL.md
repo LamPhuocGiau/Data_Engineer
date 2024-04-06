@@ -1,9 +1,9 @@
 # Structured Query Language (SQL)
 ## Table of contents
-- [Querying single table](https://github.com/LamPhuocGiau/Data_Engineer/edit/main/Theories/SQL.md#querying-single-table)
-- [Aliases](https://github.com/LamPhuocGiau/Data_Engineer/edit/main/Theories/SQL.md#aliases)
-- [Filtering the output](https://github.com/LamPhuocGiau/Data_Engineer/edit/main/Theories/SQL.md#filtering-the-output)
-- [Multible tables](https://github.com/LamPhuocGiau/Data_Engineer/edit/main/Theories/SQL.md#multible-table)
+- [Querying single table](##Querying-single-table)
+- [Aliases](##Aliases)
+- [Filtering the output](##Filtering-the-output)
+- [Multible tables]()
 ## Querying single table
 Country table:                          
 id | name | population | area           
