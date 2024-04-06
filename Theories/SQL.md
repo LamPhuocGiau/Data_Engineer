@@ -41,6 +41,7 @@ Fetch city names sorted by the rating column in the default ASCending order:
     FROM city
     ORDER BY rating [ASC];
 ```
+[(Back to top)](#table-of-contents)
 ## Aliases
 Columns
 ```
@@ -54,6 +55,7 @@ Tables
     JOIN country AS co
      ON ci.country_id = co.id;
 ```
+[(Back to top)](#table-of-contents)
 ## Filtering the output
 **Comparison operators**.
 
@@ -105,6 +107,7 @@ Fetch names of cities that are in countries with IDs 1, 4, 7, or 8:
     FROM city
     WHERE country_id IN (1, 4, 7, 8);
 ```
+[(Back to top)](#table-of-contents)
 ## Querying multible tables
 **Inner join**.
 
