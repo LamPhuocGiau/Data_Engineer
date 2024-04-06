@@ -1,8 +1,8 @@
 # Structured Query Language (SQL)
 ## Table of contents
-- [Querying single table](##Querying-single-table)
-- [Aliases](##Aliases)
-- [Filtering the output](##Filtering-the-output)
+- [Querying single table](#Querying-single-table)
+- [Aliases](#Aliases)
+- [Filtering the output](#Filtering-the-output)
 - [Multible tables]()
 ## Querying single table
 Country table:                          
