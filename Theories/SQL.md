@@ -3,7 +3,7 @@
 - [Querying single table](#Querying-single-table)
 - [Aliases](#Aliases)
 - [Filtering the output](#Filtering-the-output)
-- [Multible tables]()
+- [Querying multible tables](#Querying-multible-tables)
 ## Querying single table
 Country table:                          
 id | name | population | area           
@@ -105,5 +105,16 @@ Fetch names of cities that are in countries with IDs 1, 4, 7, or 8:
     FROM city
     WHERE country_id IN (1, 4, 7, 8);
 ```
-## Multible table
+## Querying multible tables
+**Inner join**.
+
+JOIN (or explicitly INNER JOIN) returns rows that have matching values in both tables.
+```
+        SELECT city.name, country.name
+        FROM city
+        [INNER] JOIN country
+         ON city.country_id = country.id;
+```
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/inner_join.png)
+
 
