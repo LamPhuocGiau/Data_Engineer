@@ -196,7 +196,9 @@ NATURAL JOIN used these columns to match rows: city.id, city.name, country.id, c
 
 ![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/multiple_joins.png)
 
-**Join with multiple conditions**
+**Join with multiple conditions**.
+
+You can use multiple JOIN conditions using the ON keyword once and the AND keywords as many times as you need.
 
 ![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/join_with_multiple_conditions.png)
 
