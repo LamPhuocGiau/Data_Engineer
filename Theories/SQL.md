@@ -180,6 +180,10 @@ NATURAL JOIN country;
 
 NATURAL JOIN used these columns to match rows: city.id, city.name, country.id, country.name NATURAL JOIN is very rarely used in practice.
 
+**Column and table aliases**
+
+
+
 [(Back to top)](#table-of-contents)
 ## Aggregation and grouping
 GROUP BY groups together rows that have the same values in specified columns. It computes summaries (aggregates) for each unique combination of values. 
