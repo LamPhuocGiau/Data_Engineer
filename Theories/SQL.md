@@ -5,6 +5,7 @@
 - [Filtering the output](#Filtering-the-output)
 - [Querying multible tables](#Querying-multible-tables)
 - [Aggregation and grouping](#Aggregation-and-grouping)
+- [Subqueries](#Subqueries)
 ## Querying single table
 Country table:                          
 id | name | population | area           
@@ -228,7 +229,8 @@ HAVING AVG(rating) > 3.0;
 ## Subqueries
 A subquery is a query that is nested inside another query, or inside another subquery. There are different types of subqueries. 
 
-**Single value**
+**Single value**.
+
 The simplest subquery returns exactly one column and exactly one row. It can be used with comparison operators =, <, <=, >, or >=.
 
 This query finds cities with the same rating as Paris:
@@ -240,7 +242,8 @@ WHERE rating = (
  WHERE name = 'Paris'
 );
 ```
-**Multiple values**
+**Multiple values**.
+
 A subquery can also return multiple columns or multiple rows. Such subqueries can be used with operators **IN, EXISTS, ALL, or ANY**.
 
 This query finds cities in countries that have a population above 20M:
@@ -253,7 +256,8 @@ WHERE country_id IN (
  WHERE population > 20000000
 );
 ```
-**Correlated**
+**Correlated**.
+
 A correlated subquery refers to the tables introduced in the outer query. A correlated
 subquery depends on the outer query. It cannot be run independently from the outer
 query.
