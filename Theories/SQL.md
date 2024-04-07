@@ -180,9 +180,25 @@ NATURAL JOIN country;
 
 NATURAL JOIN used these columns to match rows: city.id, city.name, country.id, country.name NATURAL JOIN is very rarely used in practice.
 
-**Column and table aliases**
+**Column and table aliases**.
 
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/column_and_table_aliases.png)
 
+**Self join**.
+
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/self_join.png)
+
+**Non equi self join**.
+
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/Non_equi_self_join.png)
+
+**Multiple join**.
+
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/multiple_joins.png)
+
+**Join with multiple conditions**
+
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/join_with_multiple_conditions.png)
 
 [(Back to top)](#table-of-contents)
 ## Aggregation and grouping
