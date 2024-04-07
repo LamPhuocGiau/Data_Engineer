@@ -29,7 +29,7 @@ Delete files or directories|	rm|	del
 Action	|Mac/Linux Command	|Windows Command
 ---|---|---
 Redirect output	|>	|>
-Pipe, or transfer, output	|| |	|
+Pipe, or transfer, output	| \| |	\|
 Append output to another file	|>>|	>>
 Search files for a pattern match|	grep	|find
 
