@@ -121,7 +121,7 @@ JOIN (or explicitly INNER JOIN) returns rows that have matching values in both t
         [INNER] JOIN country
          ON city.country_id = country.id;
 ```
-![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/inner_join.png)
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Theories/Images/inner_join.png)
 
 **Left join**.
 
@@ -132,7 +132,7 @@ FROM city
 LEFT JOIN country
  ON city.country_id = country.id;
 ```
-![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/left_join.png)
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Theories/Images/left_join.png)
 
 **Right join**.
 
@@ -143,7 +143,7 @@ FROM city
 RIGHT JOIN country
  ON city.country_id = country.id;
 ```
-![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/right_join.png)
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Theories/Images/right_join.png)
 
 **Full join**.
 
@@ -154,7 +154,7 @@ FROM city
 FULL [OUTER] JOIN country
  ON city.country_id = country.id;
 ```
-![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/full_join.png)
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Theories/Images/full_join.png)
 
 **Cross join**.
 
@@ -166,7 +166,7 @@ CROSS JOIN country;
 SELECT city.name, country.name
 FROM city, country;
 ```
-![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/cross_join.png)
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Theories/Images/cross_join.png)
 
 **Natural join**.
 
@@ -176,37 +176,37 @@ SELECT city.name, country.name
 FROM city
 NATURAL JOIN country;
 ```
-![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/natural_join.png)
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Theories/Images/natural_join.png)
 
 NATURAL JOIN used these columns to match rows: city.id, city.name, country.id, country.name NATURAL JOIN is very rarely used in practice.
 
 **Column and table aliases**.
 
-![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/column_and_table_aliases.png)
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Theories/Images/column_and_table_aliases.png)
 
 **Self join**.
 
-![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/self_join.png)
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Theories/Images/self_join.png)
 
 **Non equi self join**.
 
-![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/Non_equi_self_join.png)
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Theories/Images/Non_equi_self_join.png)
 
 **Multiple join**.
 
-![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/multiple_joins.png)
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Theories/Images/multiple_joins.png)
 
 **Join with multiple conditions**.
 
 You can use multiple JOIN conditions using the ON keyword once and the AND keywords as many times as you need.
 
-![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/join_with_multiple_conditions.png)
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Theories/Images/join_with_multiple_conditions.png)
 
 [(Back to top)](#table-of-contents)
 ## Aggregation and grouping
 GROUP BY groups together rows that have the same values in specified columns. It computes summaries (aggregates) for each unique combination of values. 
 
-![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/aggregating_and_grouping.png)
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Theories/Images/aggregating_and_grouping.png)
 
 **Aggregation functions**
     - avg(expr): average value for rows within the group
@@ -310,7 +310,7 @@ WHERE EXISTS (
 ## Set operations
 Set operations are used to combine the results of two or more queries into a single result. The combined queries must return the same number of columns and compatible data types. The names of the corresponding columns can be different.
 
-![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/set_operations.png)
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Theories/Images/set_operations.png)
 
 **Union**
 
@@ -318,7 +318,7 @@ UNION combines the results of two result sets and removes duplicates.
 
 UNION ALL doesn't remove duplicate rows.
 
-![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/union.png)
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Theories/Images/union.png)
 
 This query displays German cyclists together with German skaters:
 ```
@@ -333,7 +333,7 @@ WHERE country = 'DE';
 **Intersect**
 INTERSECT returns only rows that appear in both result sets.
 
-![alt text]( https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/intersect.png)
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Theories/Images/intersect.png)
 
 This query displays German cyclists who are also German skaters at the same time:
 ```
@@ -348,7 +348,7 @@ WHERE country = 'DE';
 **Except**
 EXCEPT returns only the rows that appear in the first result set but do not appear in the second result set.
 
-![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/except.png)
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Theories/Images/except.png)
 
 This query displays German cyclists unless they are also German skaters at the same time:
 ```
