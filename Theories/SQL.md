@@ -118,7 +118,7 @@ JOIN (or explicitly INNER JOIN) returns rows that have matching values in both t
         [INNER] JOIN country
          ON city.country_id = country.id;
 ```
-![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/inner_join.png).
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/inner_join.png)
 
 **Left join**.
 
@@ -129,7 +129,7 @@ FROM city
 LEFT JOIN country
  ON city.country_id = country.id;
 ```
-![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/left_join.png).
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/left_join.png)
 
 **Right join**.
 
@@ -140,7 +140,7 @@ FROM city
 RIGHT JOIN country
  ON city.country_id = country.id;
 ```
-![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/right_join.png).
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/right_join.png)
 
 **Full join**.
 
@@ -151,7 +151,7 @@ FROM city
 FULL [OUTER] JOIN country
  ON city.country_id = country.id;
 ```
-![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/full_join.png).
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/full_join.png)
 
 **Cross join**.
 
@@ -163,7 +163,7 @@ CROSS JOIN country;
 SELECT city.name, country.name
 FROM city, country;
 ```
-![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/cross_join.png).
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/cross_join.png)
 
 **Natural join**.
 
@@ -175,6 +175,7 @@ NATURAL JOIN country;
 ```
 ![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/natural_join.png)
 NATURAL JOIN used these columns to match rows: city.id, city.name, country.id, country.name NATURAL JOIN is very rarely used in practice.
+
 [(Back to top)](#table-of-contents)
 
 
