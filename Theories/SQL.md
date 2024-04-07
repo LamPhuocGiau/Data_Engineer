@@ -119,5 +119,12 @@ JOIN (or explicitly INNER JOIN) returns rows that have matching values in both t
          ON city.country_id = country.id;
 ```
 ![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/inner_join.png)
+**Left join**.
 
-
+LEFT JOIN returns all rows from the left table with corresponding rows from the right table. If there's no matching row, NULLs are returned as values from the second table
+```
+SELECT city.name, country.name
+FROM city
+LEFT JOIN country
+ ON city.country_id = country.id;
+```
