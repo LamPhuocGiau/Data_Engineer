@@ -4,6 +4,7 @@
 - [Aliases](#Aliases)
 - [Filtering the output](#Filtering-the-output)
 - [Querying multible tables](#Querying-multible-tables)
+- [Aggregation and grouping](#Aggregation-and-grouping)
 ## Querying single table
 Country table:                          
 id | name | population | area           
@@ -178,12 +179,52 @@ NATURAL JOIN country;
 NATURAL JOIN used these columns to match rows: city.id, city.name, country.id, country.name NATURAL JOIN is very rarely used in practice.
 
 [(Back to top)](#table-of-contents)
+## Aggregation and grouping
+GROUP BY groups together rows that have the same values in specified columns. It computes summaries (aggregates) for each unique combination of values. 
 
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/aggregating_and_grouping.png)
 
-
-
-
-
+**Aggregation functions**
+    - avg(expr): average value for rows within the group
+    - count(expr): count of values for rows within the group
+    - max(expr): maximum value within the group
+    - min(expr): minimum value within the group
+    - sum(expr): sum of values within the group
+**Example queries**
+Find out the number of cities:
+```
+SELECT COUNT(*)
+FROM city;
+```
+Find out the number of cities with non-null ratings:
+```
+SELECT COUNT(rating)
+FROM city;
+```
+Find out the number of distinctive country values:
+```
+SELECT COUNT(DISTINCT country_id)
+FROM city;
+```
+Find out the smallest and the greatest country populations:
+```
+SELECT MIN(population), MAX(population)
+FROM country;
+```
+Find out the total population of cities in respective countries:
+```
+SELECT country_id, SUM(population)
+FROM city
+GROUP BY country_id;
+```
+Find out the average rating for cities in respective countries if the average is above 3.0:
+```
+SELECT country_id, AVG(rating)
+FROM city
+GROUP BY country_id
+HAVING AVG(rating) > 3.0;
+```
+[(Back to top)](#table-of-contents)
 
 
 
