@@ -148,8 +148,29 @@ FROM city
 FULL [OUTER] JOIN country
  ON city.country_id = country.id;
 ```
-![alt text] (https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/full_join.png)
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/full_join.png)
+**Cross join**.
 
+CROSS JOIN returns all possible combinations of rows from both tables. There are two syntaxes available.
+```
+SELECT city.name, country.name
+FROM city
+CROSS JOIN country;
+SELECT city.name, country.name
+FROM city, country;
+```
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/cross_join.png)
+**Natural join**.
+
+NATURAL JOIN will join tables by all columns with the same name.
+```
+SELECT city.name, country.name
+FROM city
+NATURAL JOIN country;
+```
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/natural_join.png)
+NATURAL JOIN used these columns to match rows: city.id, city.name, country.id, country.name NATURAL JOIN is very rarely used in practice.
+[(Back to top)](#table-of-contents)
 
 
 
