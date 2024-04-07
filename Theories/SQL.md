@@ -290,6 +290,8 @@ Set operations are used to combine the results of two or more queries into a sin
 
 ![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/set_operations.png)
 
+**Union**
+
 UNION combines the results of two result sets and removes duplicates.
 
 UNION ALL doesn't remove duplicate rows.
@@ -306,7 +308,36 @@ SELECT name
 FROM skating
 WHERE country = 'DE';
 ```
+**Intersect**
+INTERSECT returns only rows that appear in both result sets.
 
+![alt text]( https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/intersect.png)
+
+This query displays German cyclists who are also German skaters at the same time:
+```
+SELECT name
+FROM cycling
+WHERE country = 'DE'
+INTERSECT
+SELECT name
+FROM skating
+WHERE country = 'DE';
+```
+**Except**
+EXCEPT returns only the rows that appear in the first result set but do not appear in the second result set.
+
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/except.png)
+
+This query displays German cyclists unless they are also German skaters at the same time:
+```
+SELECT name
+FROM cycling
+WHERE country = 'DE'
+EXCEPT / MINUS
+SELECT name
+FROM skating
+WHERE country = 'DE'
+```
 [(Back to top)](#table-of-contents)
 
 
