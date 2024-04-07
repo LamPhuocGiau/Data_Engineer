@@ -6,6 +6,7 @@
 - [Querying multible tables](#Querying-multible-tables)
 - [Aggregation and grouping](#Aggregation-and-grouping)
 - [Subqueries](#Subqueries)
+- [Set operations](#Set-operations)
 ## Querying single table
 Country table:                          
 id | name | population | area           
@@ -293,10 +294,10 @@ UNION combines the results of two result sets and removes duplicates.
 
 UNION ALL doesn't remove duplicate rows.
 
-This query displays German cyclists together with German skaters:
 ![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/union.png)
 
-'''
+This query displays German cyclists together with German skaters:
+```
 SELECT name
 FROM cycling
 WHERE country = 'DE'
@@ -304,7 +305,9 @@ UNION / UNION ALL
 SELECT name
 FROM skating
 WHERE country = 'DE';
-'''
+```
+
+[(Back to top)](#table-of-contents)
 
 
 
