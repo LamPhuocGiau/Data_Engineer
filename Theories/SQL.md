@@ -273,9 +273,38 @@ WHERE population > (
  WHERE average_city.country_id = main_city.country_id
 );
 ```
+This query finds countries that have at least one city:
+```
+SELECT name
+FROM country
+WHERE EXISTS (
+ SELECT *
+ FROM city
+ WHERE country_id = country.id
+);
+```
+[(Back to top)](#table-of-contents)
+## Set operations
+Set operations are used to combine the results of two or more queries into a single result. The combined queries must return the same number of columns and compatible data types. The names of the corresponding columns can be different.
 
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/set_operations.png)
 
+UNION combines the results of two result sets and removes duplicates.
 
+UNION ALL doesn't remove duplicate rows.
+
+This query displays German cyclists together with German skaters:
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/union.png)
+
+'''
+SELECT name
+FROM cycling
+WHERE country = 'DE'
+UNION / UNION ALL
+SELECT name
+FROM skating
+WHERE country = 'DE';
+'''
 
 
 
