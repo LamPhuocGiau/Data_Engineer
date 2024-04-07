@@ -174,6 +174,7 @@ FROM city
 NATURAL JOIN country;
 ```
 ![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/natural_join.png)
+
 NATURAL JOIN used these columns to match rows: city.id, city.name, country.id, country.name NATURAL JOIN is very rarely used in practice.
 
 [(Back to top)](#table-of-contents)
