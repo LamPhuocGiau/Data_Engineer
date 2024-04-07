@@ -118,7 +118,8 @@ JOIN (or explicitly INNER JOIN) returns rows that have matching values in both t
         [INNER] JOIN country
          ON city.country_id = country.id;
 ```
-![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/inner_join.png)
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/inner_join.png).
+
 **Left join**.
 
 LEFT JOIN returns all rows from the left table with corresponding rows from the right table. If there's no matching row, NULLs are returned as values from the second table
@@ -128,7 +129,8 @@ FROM city
 LEFT JOIN country
  ON city.country_id = country.id;
 ```
-![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/left_join.png)
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/left_join.png).
+
 **Right join**.
 
 RIGHT JOIN returns all rows from the right table with corresponding rows from the left table. If there's no matching row, NULLs are returned as values from the left table
@@ -138,7 +140,8 @@ FROM city
 RIGHT JOIN country
  ON city.country_id = country.id;
 ```
-![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/right_join.png)
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/right_join.png).
+
 **Full join**.
 
 FULL JOIN (or explicitly FULL OUTER JOIN) returns all rows from both tables – if there's no matching row in the second table, NULLs are returned.
@@ -148,7 +151,8 @@ FROM city
 FULL [OUTER] JOIN country
  ON city.country_id = country.id;
 ```
-![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/full_join.png)
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/full_join.png).
+
 **Cross join**.
 
 CROSS JOIN returns all possible combinations of rows from both tables. There are two syntaxes available.
@@ -159,7 +163,8 @@ CROSS JOIN country;
 SELECT city.name, country.name
 FROM city, country;
 ```
-![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/cross_join.png)
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Images/cross_join.png).
+
 **Natural join**.
 
 NATURAL JOIN will join tables by all columns with the same name.
