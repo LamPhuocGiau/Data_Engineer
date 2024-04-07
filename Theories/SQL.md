@@ -225,10 +225,50 @@ GROUP BY country_id
 HAVING AVG(rating) > 3.0;
 ```
 [(Back to top)](#table-of-contents)
+## Subqueries
+A subquery is a query that is nested inside another query, or inside another subquery. There are different types of subqueries. 
 
+**Single value**
+The simplest subquery returns exactly one column and exactly one row. It can be used with comparison operators =, <, <=, >, or >=.
 
+This query finds cities with the same rating as Paris:
+```
+SELECT name FROM city
+WHERE rating = (
+ SELECT rating
+ FROM city
+ WHERE name = 'Paris'
+);
+```
+**Multiple values**
+A subquery can also return multiple columns or multiple rows. Such subqueries can be used with operators **IN, EXISTS, ALL, or ANY**.
 
+This query finds cities in countries that have a population above 20M:
+```
+SELECT name
+FROM city
+WHERE country_id IN (
+ SELECT country_id
+ FROM country
+ WHERE population > 20000000
+);
+```
+**Correlated**
+A correlated subquery refers to the tables introduced in the outer query. A correlated
+subquery depends on the outer query. It cannot be run independently from the outer
+query.
 
+This query finds cities with a population greater than the average population in the
+country:
+```
+SELECT *
+FROM city main_city
+WHERE population > (
+ SELECT AVG(population)
+ FROM city average_city
+ WHERE average_city.country_id = main_city.country_id
+);
+```
 
 
 
