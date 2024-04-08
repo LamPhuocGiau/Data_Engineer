@@ -7,7 +7,9 @@
   4. Basic Pandas
   5. Basic Command Line
   6. Projects
-### Resources
+## Theories
+
+## Resources
   - [Codecademy](https://www.codecademy.com/)
   - [Udacity](https://learn.udacity.com/)
 
