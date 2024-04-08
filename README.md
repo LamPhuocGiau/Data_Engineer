@@ -1,5 +1,5 @@
 # Data Engineer
-## Table of contents
+## Code
   0. Data Fundamentals
   1. Basic SQL
   2. Basic Python 3
