@@ -126,16 +126,18 @@ Find the means of each index position, **axis 0 (the “columns”)**:
 >>> np.mean(ring_toss, axis=0)
 array([ 0.66666667,  0.        ,  0.66666667])
 ```
-
 ## Sorting and outliers
-'''
+```
 >>> heights = np.array([49.7, 46.9, 62, 47.2, 47, 48.3, 48.7])
 >>> np.sort(heights)
 array([ 46.9,  47. ,  47.2,  48.3,  48.7,  49.7,  62])
 ```
-
 ## Numpy and median
-
+```
+>>> my_array = np.array([50, 38, 291, 59, 14])
+>>> np.median(my_array)
+50.0
+```
 ## Mean Vs. meadian
 
 ## Percentiles
