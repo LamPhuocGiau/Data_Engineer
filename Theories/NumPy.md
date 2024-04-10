@@ -1,6 +1,6 @@
 # NumPy
 ## Table of contents
-    - [Introduction](#ntroduction)
+    - [Introduction](#Introduction)
     - [Numpy arrays](#Numpy-arrays)
     - [Create an array from csv](#Create-an-array-from-csv)
     - [Operations with numpy arrays](#Operations-with-numpy-arrays)
@@ -18,6 +18,7 @@
     - [Percentiles](#ercentiles)
     - [Numpy and standard deviation](#Numpy-and-standard-deviation)
     - [Introduction](#Introduction)
+
 ```
 import numpy as np
 ```
