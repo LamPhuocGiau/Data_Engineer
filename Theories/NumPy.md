@@ -11,7 +11,6 @@
 - [NumPy and mean](#NumPy-and-mean)
 - [Mean and logical operations](#Mean-and-logical-operations)
 - [Caculating of 2D array](#Caculating-of-2D-array)
-- [Outliersa](#Outliersa)
 - [Sorting and outliers](#Sorting-and-outliers)
 - [Numpy and median](#Numpy-and-median)
 - [Mean Vs. meadian](#Mean Vs. meadian)
@@ -19,11 +18,9 @@
 - [Numpy and standard deviation](#Numpy-and-standard-deviation)
 - [Introduction](#Introduction)
 
-```
-import numpy as np
-```
 ## Numpy arrays
 ```
+import numpy as np
 my_list = [1, 2, 3, 4, 5, 6]
 my_array = np.array(my_list)
 ```
@@ -108,10 +105,34 @@ a logical operator will evaluate each item in an array to see if it matches the 
 ```
 
 ## Caculating of 2D array
+Find the mean across all the arrays.
 
-## Outliers
+```
+>>> ring_toss = np.array([[1, 0, 0], 
+                          [0, 0, 1], 
+                          [1, 0, 1]])
+>>> np.mean(ring_toss)
+0.44444444444444442
+```
+Find the means of each interior array, we specify **axis 1 (the “rows”)**:
+
+```
+>>> np.mean(ring_toss, axis=1)
+array([ 0.33333333,  0.33333333,  0.66666667])
+```
+Find the means of each index position, **axis 0 (the “columns”)**:
+
+```
+>>> np.mean(ring_toss, axis=0)
+array([ 0.66666667,  0.        ,  0.66666667])
+```
 
 ## Sorting and outliers
+'''
+>>> heights = np.array([49.7, 46.9, 62, 47.2, 47, 48.3, 48.7])
+>>> np.sort(heights)
+array([ 46.9,  47. ,  47.2,  48.3,  48.7,  49.7,  62])
+```
 
 ## Numpy and median
 
