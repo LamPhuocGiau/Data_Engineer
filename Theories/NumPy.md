@@ -8,7 +8,16 @@
     - [Selecting elements from a 1D array](#Selecting-elements-from-a-1D-array)
     - [Selecting elements from a 2D array](#Selecting-elements-from-a-2D-array)
     - [Logical operatios with array](#Logical-operatios-with-array)
-## Introduction
+    - [NumPy and mean](#NumPy-and-mean)
+    - [Mean and logical operations](#Mean-and-logical-operations)
+    - [Caculating of 2D array](#Caculating-of-2D-array)
+    - [Outliersa](#Outliersa)
+    - [Sorting and outliers](#Sorting-and-outliers)
+    - [Numpy and median](#Numpy-and-median)
+    - [Mean Vs. meadian](#Mean Vs. meadian)
+    - [Percentiles](#ercentiles)
+    - [Numpy and standard deviation](#Numpy-and-standard-deviation)
+    - [Introduction](#Introduction)
 ```
 import numpy as np
 ```
@@ -84,3 +93,29 @@ array([10, 9, 8, 9, 7])
 >>> a[(a > 5) | (a < 2)]
 array([10, 9, 8, 9, 7])
 ```
+## NumPy and mean
+```
+>>> survey_array = np.array(survey_responses)
+>>> np.mean(survey_array)
+5.220
+```
+## Mean and logical operations
+a logical operator will evaluate each item in an array to see if it matches the specified condition. If the item matches the given condition, the item will evaluate as True and equal 1. If it does not match, it will be False and equal 0. mean value will be equivalent to the total number of True items divided by the total array length.
+```
+>>> np.mean(survey_array > 8)
+0.2
+```
+
+## Caculating of 2D array
+
+## Outliers
+
+## Sorting and outliers
+
+## Numpy and median
+
+## Mean Vs. meadian
+
+## Percentiles
+
+## Numpy and standard deviation
