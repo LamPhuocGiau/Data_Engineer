@@ -13,7 +13,6 @@
 - [Caculating of 2D array](#Caculating-of-2D-array)
 - [Sorting and outliers](#Sorting-and-outliers)
 - [Numpy and median](#Numpy-and-median)
-- [Mean Vs. meadian](#Mean Vs. meadian)
 - [Percentiles](#ercentiles)
 - [Numpy and standard deviation](#Numpy-and-standard-deviation)
 - [Introduction](#Introduction)
@@ -133,13 +132,26 @@ array([ 0.66666667,  0.        ,  0.66666667])
 array([ 46.9,  47. ,  47.2,  48.3,  48.7,  49.7,  62])
 ```
 ## Numpy and median
+
+** should be sort befor calculate**
+
 ```
 >>> my_array = np.array([50, 38, 291, 59, 14])
 >>> np.median(my_array)
 50.0
 ```
-## Mean Vs. meadian
-
 ## Percentiles
 
+**Should be sort before calculate percentile**
+
+```
+>>> d = np.array([1, 2, 3, 4, 4, 4, 6, 6, 7,  8, 8])
+>>> np.percentile(d, 40)
+4.00
+```
+
 ## Numpy and standard deviation
+
+```
+np.std()
+```
