@@ -287,3 +287,13 @@ symmetry about the center.
 
 ![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Theories/Images/normal_distribution.svg)
 
+The number of standard deviations from the mean is also called the "Standard Score", "sigma" or "z-score".
+
+- First subtract the mean.
+
+- Then divide by the Standard Deviation.
+
+```
+Formula:
+z =  (x − μ) / σ
+```
