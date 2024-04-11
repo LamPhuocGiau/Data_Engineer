@@ -147,7 +147,7 @@ The expected value is 4.5.
 **Variance**.
 
 ```
-Var(X) = Σx\**2p − μ\**2
+Var(X) = Σx\*\*2p − μ\*\*2
 ```
 <details>
 <summary>Example</summary>
@@ -159,7 +159,7 @@ x2p	0.1	0.4	0.9	1.6	2.5	18.
 
 Σx2p = 0.1+0.4+0.9+1.6+2.5+18 = 23.5.
 
-Var(X) = Σx\**2p − μ\**2 = 23.5 - 4.52 = 3.25.
+Var(X) = Σx\*\*2p − μ\*\*2 = 23.5 - 4.52 = 3.25.
 
 The variance is 3.25.
 
