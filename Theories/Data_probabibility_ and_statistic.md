@@ -173,7 +173,9 @@ The Standard Deviation is the square root of the Variance.
 σ = √Var(X)
 ```
 <details>
+
 <summary>Example<summary>
+
 x  	  1  	  2  	  3  	  4  	  5  	  6.
 
 p	0.1	0.1	0.1	0.1	0.1	0.5.
@@ -187,7 +189,14 @@ The Standard Deviation is 1.803.
 </details>
 
 ## The binomial distribution
+
+**Pascal's Triangle**
+
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Theories/Images/pascal_triangle.png)
+
+It is called "n choose k". n = total number and k = number we want.
+
 ## The normal distribution
 
-
+But there are many cases where the data tends to be around a central value with no bias left or right, and it gets close to a "Normal Distribution".    
 
