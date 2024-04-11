@@ -147,7 +147,7 @@ The expected value is 4.5.
 **Variance**.
 
 ```
-Var(X) = Σx\*\*2p − μ\*\*2
+Var(X) = Σx**2p − μ**2
 ```
 <details>
 <summary>Example</summary>
@@ -162,6 +162,27 @@ x2p	0.1	0.4	0.9	1.6	2.5	18.
 Var(X) = Σx\*\*2p − μ\*\*2 = 23.5 - 4.52 = 3.25.
 
 The variance is 3.25.
+
+</details>
+
+**Standard Deviation: σ**.
+
+The Standard Deviation is the square root of the Variance.
+
+```
+σ = √Var(X)
+```
+<details>
+<summary>Example<summary>
+x  	  1  	  2  	  3  	  4  	  5  	  6.
+
+p	0.1	0.1	0.1	0.1	0.1	0.5.
+
+x2p	0.1	0.4	0.9	1.6	2.5	18.
+
+σ = √Var(X) = √3.25 = 1.803.
+
+The Standard Deviation is 1.803.
 
 </details>
 
