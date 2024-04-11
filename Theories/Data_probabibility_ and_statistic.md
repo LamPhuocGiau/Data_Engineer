@@ -174,7 +174,7 @@ The Standard Deviation is the square root of the Variance.
 ```
 <details>
 
-<summary>Example<summary>
+<summary>Example</summary>
 
 x  	  1  	  2  	  3  	  4  	  5  	  6.
 
@@ -190,11 +190,75 @@ The Standard Deviation is 1.803.
 
 ## The binomial distribution
 
-**Pascal's Triangle**
+**Number of outcomes**.
+
+Pascal's Triangle formula is used. It is called "n choose k". n = total number and k = Number we want.
 
 ![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Theories/Images/pascal_triangle.png)
 
-It is called "n choose k". n = total number and k = number we want.
+<details>
+
+<summary>Example</summary>
+
+Example: with 3 tosses, what are the chances of 2 Heads?
+
+We have n=3 and k=2:
+
+n!/k!(n-k)! = 3!/2!(3-2)! = (3×2×1)/(2×1 × 1) = 3.
+
+So there are 3 outcomes that have "2 Heads".
+
+</details>
+
+**Probability of each outcome**.
+
+```
+= p^k * (1-p)^(n-k)
+```
+p is the probability of each choice we want.
+
+k is the the number of choices we want.
+
+n is the total number of choices.
+
+**The General Binomial Probability Formula**.
+
+Probability of k out of n ways:
+
+```
+P(k out of n) = (n!/ k!(n-k)!) * p^k * (1-p)^(n-k)
+```
+<details>
+<summary>Example</summary>
+
+Example: Sam says "70% choose chicken, so 7 of the next 10 customers should choose chicken" ... what are the chances Sam is right?. So we have:
+
+n!p = 0.7.
+
+n = 10.
+
+k = 7.
+
+And we get:
+
+p^k * (1-p)^(n-k) =0.7^7 * (1-0.7)^(10-7) =0.7^7 * (0.3)^(3) =0.0022235661.
+
+That is the probability of each outcome.
+
+And the total number of those outcomes is:
+
+(n!) / (k!(n-k)!) = (10!) / (7!(10-7)!) = (10×9×8×7×6×5×4×3×2×1) / (7×6×5×4×3×2×1 × 3×2×1) = (10×9×8)/(3×2×1) =120.
+
+And we get:
+
+Number of outcomes we want	   	Probability ofeach outcome	 	 
+            120	  ×  	                0.0022235661	  =  	0.266827932.
+ 
+So the probability of 7 out of 10 choosing chicken is only about 27%.
+
+Moral of the story: even though the long-run average is 70%, don't expect 7 out of the next 10.
+
+</details>
 
 ## The normal distribution
 
