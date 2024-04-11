@@ -12,16 +12,14 @@ Capital letter (X,Y,...) is used to be sepecified algebra and probility.
 
 A Random Variable's set of values is the Sample Space.
 
-<detaila>
+<details>
 <summary> Example </summary>
 
 </details>
 
 <details>
-<summary>Example</summary>
+<summary>Example Throw a die once</summary>
 
-> Example: Throw a die once.
->
 > Random Variable X = "The score shown on the top face".
 >
 > X could be 1, 2, 3, 4, 5 or 6.
