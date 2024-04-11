@@ -285,5 +285,5 @@ symmetry about the center.
 
 50% of values less than the mean and 50% greater than the mean.
 
-![alt text]()
+![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Theories/Images/normal_distribution.svg)
 
