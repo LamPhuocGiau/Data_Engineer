@@ -24,7 +24,8 @@ X = {0, 1} = sample space
 
 </details>
 
-**Probability**
+**Probability**.
+
 P(X = value) = probability of that value.
 
 <details>
@@ -71,9 +72,16 @@ Let's count how often each value occurs, and work out the probabilities:
 12 occurs just once, so P(X = 12) = 1/36.
 
 </details>
+**A Range of Values**.
+<details>
+<summary>Example: What is the probability that the sum of the scores is 5, 6, 7 or 8?</summary>
+In other words: What is P(5 ≤ X ≤ 8)?
 
-
-P(X = value) = probability of that value
+P(5 ≤ X ≤ 8) =P(X=5) + P(X=6) + P(X=7) + P(X=8)
+            =(4+5+6+5)/36
+            =20/36
+            =5/9
+</details>
 ## The binomial distribution
 ## The normal distribution
 
