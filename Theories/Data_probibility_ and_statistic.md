@@ -72,6 +72,7 @@ Let's count how often each value occurs, and work out the probabilities:
 12 occurs just once, so P(X = 12) = 1/36.
 
 </details>
+
 **A Range of Values**.
 
 <details>
