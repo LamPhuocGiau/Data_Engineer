@@ -16,8 +16,13 @@
 - [Percentiles](#ercentiles)
 - [Numpy and standard deviation](#Numpy-and-standard-deviation)
 - [Introduction](#Introduction)
-
-## Numpy arrays
+- [Historgrams](#Historgrams)
+- [Types of distributions](#Types-of-distributions)
+- [Normal distribution](#Normal-distribution)
+- [Standard deviation and normal distribution](#Standard-deviation-and-normal-distribution)
+- [Binomial distribution](Binomial-distribution)
+- [Binomial distribution and probability](#Binomial-distribution-and-probability)
+- [Numpy arrays](#Numpy-arrays)
 ```
 import numpy as np
 my_list = [1, 2, 3, 4, 5, 6]
@@ -154,4 +159,10 @@ array([ 46.9,  47. ,  47.2,  48.3,  48.7,  49.7,  62])
 
 ```
 np.std()
-```
+``` 
+## Historgrams
+## Types of distributions
+## Normal distribution
+## standard deviation and normal distribution
+## Binomial distribution
+## Binomial distribution and probability
