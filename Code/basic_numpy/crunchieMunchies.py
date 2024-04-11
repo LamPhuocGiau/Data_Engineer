@@ -1,0 +1,16 @@
+import codecademylib3
+import numpy as np
+calorie_stats = np.genfromtxt('cereal.csv', delimiter = ',')
+print(calorie_stats)
+average_calories = np.mean(calorie_stats)
+print(average_calories)
+calorie_stats_sorted = np.sort(calorie_stats)
+print(calorie_stats_sorted)
+median_calories = np.median(calorie_stats)
+print(median_calories)
+percentile_3th = np.percentile(calorie_stats, 3)
+print(percentile_3th)
+more_calories = np.mean(calorie_stats > 60)
+print(more_calories)
+calories_std = np.std(calorie_stats)
+print(calories_std)
