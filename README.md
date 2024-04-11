@@ -12,4 +12,5 @@
 ## Resources
   - [Codecademy](https://www.codecademy.com/)
   - [Udacity](https://learn.udacity.com/)
+  - [Probability and statistic](#https://www.mathsisfun.com/)
 
