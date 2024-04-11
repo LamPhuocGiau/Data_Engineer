@@ -12,7 +12,7 @@ Capital letter (X,Y,...) is used to be sepecified algebra and probility.
 
 A Random Variable's set of values is the Sample Space.
 
-<detail>
+<detaila>
 <sumary> Example </sumary>
 > Example: Throw a die once.
 >
@@ -21,7 +21,7 @@ A Random Variable's set of values is the Sample Space.
 > X could be 1, 2, 3, 4, 5 or 6.
 >
 > So the Sample Space is {1, 2, 3, 4, 5, 6}.
-</detail>
+</details>
 
 
 ## The binomial distribution
