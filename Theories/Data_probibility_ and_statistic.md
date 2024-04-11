@@ -6,6 +6,13 @@
 - [Source](https://www.mathsisfun.com/data/confidence-interval.html)
 
 ## Random variables
+
+## The binomial distribution
+## The normal distribution
+
+<details>
+<summary> Random variables </summary>
+
 Random variable is possible values of random events.
 
 Capital letter (X,Y,...) is used to be sepecified algebra and probility.
@@ -20,5 +27,4 @@ A Random Variable's set of values is the Sample Space.
 >
 > So the Sample Space is {1, 2, 3, 4, 5, 6}.
 
-## The binomial distribution
-## The normal distribution
+</details>
