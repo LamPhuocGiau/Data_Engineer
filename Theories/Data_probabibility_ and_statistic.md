@@ -233,7 +233,7 @@ P(k out of n) = (n!/ k!(n-k)!) * p^k * (1-p)^(n-k)
 
 Example: Sam says "70% choose chicken, so 7 of the next 10 customers should choose chicken" ... what are the chances Sam is right?. So we have:
 
-n!p = 0.7.
+p = 0.7.
 
 n = 10.
 
@@ -260,7 +260,30 @@ Moral of the story: even though the long-run average is 70%, don't expect 7 out 
 
 </details>
 
+**Mean**.
+
+```
+μ = np
+```
+**Variance**.
+
+```
+Variance: σ^2 = np(1-p)
+```
+**Standard Deviation**.
+
+```
+σ = √(np(1-p))
+```
 ## The normal distribution
 
-But there are many cases where the data tends to be around a central value with no bias left or right, and it gets close to a "Normal Distribution".    
+The Normal Distribution has:
+
+mean = median = mode.
+
+symmetry about the center.
+
+50% of values less than the mean and 50% greater than the mean.
+
+![alt text]()
 
