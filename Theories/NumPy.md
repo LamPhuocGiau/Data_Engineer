@@ -161,8 +161,35 @@ array([ 46.9,  47. ,  47.2,  48.3,  48.7,  49.7,  62])
 np.std()
 ``` 
 ## Historgrams
+
+```
+from matplotlib import pyplot as plt
+
+d = np.array([1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 4, 4, 4, 4, 5])
+
+plt.hist(d, bins=5, range=(1, 6))
+
+plt.show()
+```
+
 ## Types of distributions
+- Unimodal distribution.
+
+- Bimodal distribution.
+
+- Multimodel distribution.
+
+- symmetric shape.
+
+- skew-right shape.
+
+- skew-left shape.
+
+Normally, mean and standard deviation will decide the shape of unimodal distribution
+
 ## Normal distribution
+
+
 ## standard deviation and normal distribution
 ## Binomial distribution
 ## Binomial distribution and probability
