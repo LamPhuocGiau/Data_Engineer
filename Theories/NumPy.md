@@ -185,11 +185,48 @@ plt.show()
 
 - skew-left shape.
 
-Normally, mean and standard deviation will decide the shape of unimodal distribution
-
 ## Normal distribution
 
+Normally, mean and standard deviation will decide the shape of unimodal distribution.
+
+```
+a = np.random.normal(0, 1, size=100000)
+```
+- loc: the mean for the normal distribution.
+
+- scale: the standard deviation of the distribution.
+
+- size: the number of random numbers to generate.
 
 ## standard deviation and normal distribution
+
+68% of our samples will fall between +/- 1 standard deviation of the mean.
+
+95% of our samples will fall between +/- 2 standard deviations of the mean.
+
+99.7% of our samples will fall between +/- 3 standard deviations of the mean.
+
+```
+lower_bound = mean - std.
+upper_bound = mean + std.
+```
+
 ## Binomial distribution
+
+**np.random.binomial**. The function will return the number of successes for each “experiment”.
+
+It takes the following arguments:
+
+N: The number of samples or trials.
+
+P: The probability of success.
+
+size: The number of experiments.
+
+
 ## Binomial distribution and probability
+
+```
+a = np.random.binomial(10, 0.30, size=10000)
+np.mean(a == 4)
+```
