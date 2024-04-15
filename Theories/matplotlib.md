@@ -11,6 +11,7 @@
 ## Chart menu
 
 Chart type | Chart code
+---|---
 Line chart | plt.plot()
 Scatter plot |	plt.scatter()
 Bar chart | plt.bar()
