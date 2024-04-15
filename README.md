@@ -24,7 +24,7 @@
 
 ## Problems and solving
 
-In during learn Data Engineer, There are many obstacles. I tried to overcome to [solve the problems](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Theories/Problems_and_solving.md).
+There are many obstacles in during learn Data Engineer. I tried to overcome through [solve the problems](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Theories/Problems_and_solving.md).
 
 ## Resources
   - [Codecademy](https://www.codecademy.com/)
