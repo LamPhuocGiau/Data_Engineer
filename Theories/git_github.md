@@ -21,8 +21,8 @@ git version
 - Connect git and git hub.
 
 ```
-git config --global user.name “Giau_Lam”
-git config --global user.email “lamphuocgiau86@gmail.com”
+git config --global user.name “ ...abcdexyz...”
+git config --global user.email “l.....@gmail.com”
 ```
 - Check git.
 
@@ -61,17 +61,17 @@ git init
 git status
 git add .
 git commit -m 'update'
-Git remote add origin <https://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@github.com/LamPhuocGiau/Python.git>
+Git remote add origin <https://abcdexyz@github.com/........git>
 git push -u origin main
 ```
-Note: Token is **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**
+Note: Token is **abcdexyz**
 
 ### Https and ssh
 
 - Create a ssh key: open terminal and paste below command.
 
 ```
-ssh-keygen -t ed25519 -C "lamphuocgiau86@gmail.com"
+ssh-keygen -t ed25519 -C "......6@gmail.com"
 ```
 
 - copy ssh key on **.SSH folder** (Ubuntu: go to home , Ctr H to show hiden files).
