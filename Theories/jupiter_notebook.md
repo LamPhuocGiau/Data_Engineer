@@ -1,4 +1,7 @@
 # Jupiter Notebook
+
+[Source instal Jupyter notebook directly or Anaconda](https://medium.com/@aashari/juinstalling-jupyter-notebook-on-ubuntu-22-04-a-step-by-step-guide-964fac660165)
+
 ## Shortcuts
 - Command Mode: Esc.
 
