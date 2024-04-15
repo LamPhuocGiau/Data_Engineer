@@ -11,16 +11,16 @@
 
 ## Theories
 
-0. SQL
-1. Command line and Linux(Ubuntu)
-2. Git and Github
-3. Python
-4. Data probability and statistic
-5. Numpy
-6. Pandas
-7. Jupyter notebook
-8. Matplotlib
-9. Seaborn
+0. [SQL]
+1. [Command line and Linux(Ubuntu)]
+2. [Git and Github]
+3. [Python]
+4. [Data probability and statistic]
+5. [Numpy]
+6. [Pandas]
+7. [Jupyter notebook]
+8. [Matplotlib]
+9. [Seaborn]
 
 ## Problems and solving
 
