@@ -57,6 +57,19 @@ plt.plot(x, y, color='#FF0000')
 
 - hexadecimal code (any web color).
 
+In addition to color, .plot() will take the parameters linewidth and linestyle. linewidth takes a number that changes the thickness of the line. linestyle takes a string: dotted, dashed, or solid.
+
+```
+dashed red line
+plt.plot(x, y, color='r', linestyle='dashed')
+
+thick, solid yellow line
+plt.plot(x, y, color='yellow', linewidth=5)
+
+thin, dotted white line
+plt.plot(x, y, color='#FFFFFF', linewidth=0.5, linestyle='dotted')
+```
+
 ## Add little and legend
 ## Adjust and label axes
 ## Export a chart
