@@ -3,7 +3,7 @@
 - [Chart menu](#Chart-menu)
 - [Anatomy of matplotlib code](#Anatomy-of-matplotlib-code)
 - [Change line color](#Change-line-color)
-- [Add little and legend](#Add-little-and-legend)
+- [Add title and legend](#Add-title-and-legend)
 - [Adjust and label axes](#Adjust-and-label-axes)
 - [Export a chart](#Export-a-chart)
 
@@ -70,6 +70,49 @@ thin, dotted white line
 plt.plot(x, y, color='#FFFFFF', linewidth=0.5, linestyle='dotted')
 ```
 
-## Add little and legend
+## Add title and legend
+
+**Add title**.
+
+```
+plt.title(‘Effect of Hunger on Mood’)
+```
+**Add legend**.
+
+- Position the legend: plt.legend() parameter bbox_to_anchor, which takes an (x,y), 0 is the left edge of the graph and 1 is the right edge.
+
+```
+plt.plot(x, y, color='red', label='Line Y')
+plt.plot(x, z, color='green', label='Line Z')
+plt.legend(bbox_to_anchor = (1, 0.5))
+```
+
 ## Adjust and label axes
+
+**Add label axes**.
+
+```
+plt.xlabel(‘Quarter’)
+plt.ylabel('Vacuum Cleaner Sales ($)')
+```
+**Add tick label**.
+
+```
+plt.tick_params(axis='x', direction='out', color='red', labelsize='large', labelcolor='purple', labelrotation=30)
+```
+
 ## Export a chart
+
+```
+plt.savefig('my_lineplot.png')
+```
+Plots will default to .png format, but we can also specify the format as a parameter and save a plot as a .jpeg, .pdf, or .svg file type.
+
+dpi: the number of pixels in the image, or essentially, how big it is.
+
+bbox_inches = 'tight' ensures that our legend, tick labels, and axes aren’t cut off.
+
+```
+plt.savefig('my_lineplot.png', dpi=128, bbox_inches='tight')
+```
+
