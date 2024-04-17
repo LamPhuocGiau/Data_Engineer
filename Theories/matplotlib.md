@@ -6,6 +6,7 @@
 - [Add title and legend](#Add-title-and-legend)
 - [Adjust and label axes](#Adjust-and-label-axes)
 - [Export a chart](#Export-a-chart)
+- [Bar chart](#bar-chart)
 
 ## Chart menu
 
@@ -115,4 +116,39 @@ bbox_inches = 'tight' ensures that our legend, tick labels, and axes aren’t cu
 ```
 plt.savefig('my_lineplot.png', dpi=128, bbox_inches='tight')
 ```
+## Bar chart
+
+```
+plt.bar(x = data.business_name, height = data.profit, width = 0.8, align = 'center')
+plt.title("Profits at 5 Businesses, 2021")
+plt.xlabel("Business Name")
+plt.ylabel("Profit ($)")
+```
+x: categorical data for each bar.
+
+height: numeric data to determine the height of each bar.
+
+width: a number we can pass in to set the width of each bar.
+
+align: set to 'center' or 'edge' to align each bar on the x-axis.
+
+**Add error bars**.
+
+```
+## make the bar graph
+plt.bar(x = data.business_name, height = data.profit, width = 0.8, align = 'center')
+plt.title("Profits at 5 Businesses, 2021")
+plt.xlabel("Business Name")
+plt.ylabel("Profit ($)")
+
+## add the error bars 
+plt.errorbar(x = data.business_name, y = data.profit, yerr = data.error_value, fmt='o', color='purple')
+```
+x and y: restate the X and Y values of the underlying graph.
+
+yerr and/or xerr: set error values in the X or Y direction.
+
+color: set the color of the error bar (optional).
+
+fmt: change the marker.
 
