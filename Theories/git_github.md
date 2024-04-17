@@ -112,6 +112,16 @@ git branch -d new_branch_name
 ```
 Merge conflict: open file at local by editor. Delete and keep the contents which we want to keep. And executive git add, commit and push again.
 
+**Conflict solving**.
+
+git log.
+
+Open on visual code to delete and keep correct codes and add, commit, push again.
+
+
+
+
+
 
 
 
