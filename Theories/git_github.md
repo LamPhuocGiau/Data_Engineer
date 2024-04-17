@@ -3,6 +3,7 @@
 - [Setup](#Setup)
 - [Create project at local and remote](#Create-project-at-local-and-remote)
 - [Https and ssh](#Https-and-ssh)
+- [Common commands](#Common-commands)
 
 - [Source](https://www.youtube.com/watch?v=pC1s6JOwglE&list=PLncHg6Kn2JT6nWS9MRjSnt6Z-9Rj0pAlo&index=3)
 
@@ -76,7 +77,29 @@ ssh-keygen -t ed25519 -C "......6@gmail.com"
 
 - copy ssh key on **.SSH folder** (Ubuntu: go to home , Ctr H to show hiden files).
 
-- github >> setting >> SSH and GPG keys. paste the SSH key
+- github >> setting >> SSH and GPG keys. paste the SSH key.
+
+### Common commands
+
+**Individual work**.
+
+git init.
+
+git clone.
+
+git status.
+
+git add.
+
+git commit.
+
+git push.
+
+**Team work**.
+
+git pull origin main: Pull the latest codes from remote to local.
+
+git checkout -b <branch_name> : Create a new branch. And switch to new branch_name
 
 
 
