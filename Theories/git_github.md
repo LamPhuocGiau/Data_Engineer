@@ -99,10 +99,9 @@ git push.
 
 git pull origin main: Pull the latest codes from remote to local.
 
-git checkout -b <branch_name> : Create a new branch. And switch to new branch_name
+git checkout -b <new_branch_name> : Create a new branch. And switch to new branch name
 
-
-
+git branch: check how many existing branch have?
 
 
 
