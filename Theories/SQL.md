@@ -7,9 +7,10 @@
 - [Aggregation and grouping](#Aggregation-and-grouping)
 - [Subqueries](#Subqueries)
 - [Set operations](#Set-operations)
+
 Sources: [Codecademy](https://www.codecademy.com/enrolled/courses/learn-sql) or [Udacity](https://learn.udacity.com/courses/ud198).
 
-Summarize the theory from [Learn SQL](https://learnsql.com/).
+Summary theory: [Learn SQL](https://learnsql.com/).
 
 ## Querying single table
 Country table:                          
