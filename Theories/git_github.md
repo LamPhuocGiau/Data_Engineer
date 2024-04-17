@@ -103,7 +103,14 @@ git checkout -b <new_branch_name> : Create a new branch. And switch to new branc
 
 git branch: check how many existing branch have?
 
+Merge new_branch_name to main_branch.
 
+```
+git checkout main: Switch to main branch.
+git merge new_branch_name
+git branch -d new_branch_name
+```
+Merge conflict: open file at local by editor. Delete and keep the contents which we want to keep. And executive git add, commit and push again.
 
 
 
