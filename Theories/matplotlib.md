@@ -7,6 +7,8 @@
 - [Adjust and label axes](#Adjust-and-label-axes)
 - [Export a chart](#Export-a-chart)
 - [Bar chart](#bar-chart)
+- [Scatterplot](#Scatterplot)
+- [Subplots](#Subplots)
 
 ## Chart menu
 
@@ -152,3 +154,49 @@ color: set the color of the error bar (optional).
 
 fmt: change the marker.
 
+## Scatterplot
+
+```
+plt.scatter(data.tree_age, data.trunk_circumference, color='yellowgreen', alpha=0.5)
+plt.title('Effect of Tree Age on Trunk Circumference in Red Oaks')
+plt.ylabel('Trunk Circumference (cm)')
+plt.xlabel('Tree Age (years)')
+plt.show()
+```
+
+x and y: the continuous numeric variables to be compared.
+
+color: marker color, as a color code, color name, or hex code.
+
+alpha: marker opacity, as a number between 0 (transparent) and 1 (opaque).
+
+Only x and y are required parameters.
+
+If the points are scattered from bottom-left to top-right in the graph, we’d be able to say “As X increases, Y also increases.” This indicates a positive correlation.
+
+If the points are scattered from top-left to bottom-right in the graph, we’d be able to say “As X increases, Y decreases.” This indicates a negative correlation.
+
+If the points are scattered in a horizontal line, we can say “As X increases, Y remains constant.” This indicates no correlation. A cloud of scattered points with no clear directional grouping also indicates no correlation.
+
+## Subplots
+
+```
+plt.suptitle('Rainbow Scatterplots')
+plt.subplot(2, 3, 1)
+plt.scatter(x, y, color = red)
+plt.subplot(2, 3, 2)
+plt.scatter(x, y, color = orange)
+plt.subplot(2, 3, 3)
+plt.scatter(x, y, color = yellow)
+plt.subplot(2, 3, 4)
+plt.scatter(x, y, color = green)
+plt.subplot(2, 3, 5)
+plt.scatter(x, y, color = blue)
+plt.subplot(2, 3, 6)
+plt.scatter(x, y, color = purple)
+```
+num_rows: number of rows in the grid.
+
+num_columns: number of columns in the grid.
+
+index: the numbered position of the subplot, reading the grid from left-to-right, top-to-bottom.
