@@ -11,6 +11,7 @@
 - [Subplots](#Subplots)
 - [Pie chart](#Pie-chart)
 - [Histogram chart](#historgram-chart)
+- [AB line](#AB-line)
 ## Chart menu
 
 Chart type | Chart code
@@ -218,3 +219,40 @@ colors: an array of colors the chart will cycle through. If blank, defaults to m
 
 ## Historgram chart
 
+```
+plt.hist(x = df.shoe_size, bins = 12, range = (5, 12), color = 'dodgerblue')
+```
+x: the value being distributed (like shoe size, or height) – note that it should not be an aggregated value.
+
+bins: specifies how many bins to make (e.g. 10) OR where the edges of the bins are (as a list of values).
+
+range: the lower and upper range of the bins. If unspecified, set to the min and max values for x.
+
+color: sets the color of the bars.  
+
+## AB line
+
+```
+plt.bar( x = school_subject, y = test_score)
+plt.axhline(y = 85, xmin = 0, xmax = 1, linewidth = 2, color = red)
+```
+
+x: where to position the line along the x-axis.
+
+ymin: how close to the bottom of the graph the line starts. Setting ymin=0 starts the line at the bottom of the graph, ymin=.5 would start it halfway up, and ymin=1 would start at the top of the graph. Usually set to 0.
+
+ymax: how close to the bottom of the graph the line ends. Setting ymax=0 ends the line at the bottom of the graph, ymax=.5 would end it halfway up, and ymax=1 would end at the top of the graph. Usually set to 1.
+
+linewidth: line width of the AB line.
+
+dashes: dash pattern given as (line_length, space_length).
+
+color: color of the AB line.
+
+plt.annotate() takes the following arguments:
+
+text: annotation text.
+
+xy: (x, y) coordinate position for annotation.
+
+color: color of annotation text and arrow.
