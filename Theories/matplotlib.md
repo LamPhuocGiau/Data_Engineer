@@ -1,4 +1,4 @@
-# Matplotlib
+# [Matplotlib](https://matplotlib.org/stable/gallery/color/named_colors.html)
 ## Table of contents
 - [Chart menu](#Chart-menu)
 - [Anatomy of matplotlib code](#Anatomy-of-matplotlib-code)
@@ -9,7 +9,8 @@
 - [Bar chart](#bar-chart)
 - [Scatterplot](#Scatterplot)
 - [Subplots](#Subplots)
-
+- [Pie chart](#Pie-chart)
+- [Histogram chart](#historgram-chart)
 ## Chart menu
 
 Chart type | Chart code
@@ -200,3 +201,20 @@ num_rows: number of rows in the grid.
 num_columns: number of columns in the grid.
 
 index: the numbered position of the subplot, reading the grid from left-to-right, top-to-bottom.
+
+## Pie chart
+
+```
+plt.pie(x = data.donut_vote_count, labels = data.donut_flavor, startangle = 30, colors = ['brown', 'pink', 'purple', 'white', 'red'])
+```
+
+x: the numeric variable shown as pieces of the pie. The function adds up all the x values to compare part and whole and auto-generate the pieces of the pie.
+
+labels: the variable used to label each section of the pie chart.
+
+startangle: the rotation of the pie chart, adjusted to improve readability.
+
+colors: an array of colors the chart will cycle through. If blank, defaults to matplotlib’s default 10-color “Tableau” palette.
+
+## Historgram chart
+
