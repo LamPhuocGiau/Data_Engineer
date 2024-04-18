@@ -40,3 +40,6 @@ Action | Mac/Linux Command	| Windows Command
 View all environment variables	| env	| set
 Set an environment variable	export | VAR=value	| setx variable value (administrator mode)
 Print specific variable	| echo $VAR	| echo %VAR%
+
+Sources: [create USB boot for Ubuntu](https://ubuntu.com/tutorials/create-a-usb-stick-on-windows#1-overview) and [install Ubuntu] (https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview).
+
