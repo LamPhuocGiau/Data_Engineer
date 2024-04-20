@@ -21,6 +21,7 @@
 7. [Jupyter notebook](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Theories/jupiter_notebook.md)
 8. [Matplotlib](https://github.com/LamPhuocGiau/Data_Engineer/blob/main/Theories/matplotlib.md)
 9. [Seaborn]
+10. [PySpark](https://github.com/LamPhuocGiau/Data_Engineer/blob/submain/Theories/PySpark.md)
 
 ## Problems and solving
 
