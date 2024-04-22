@@ -2,6 +2,7 @@
 - [Start with PySpart](#Start-with-PySpart)
 - [Transformations](#Transformation)
 - [Actions](#Actions)
+- [Associative and Commutative Properties](#Associative-and-Commutative-Properties)
 Resilient Distributed Datasets.
 
 ![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/submain/Theories/Images/Resilient-distributed-datasets.png)
@@ -99,3 +100,10 @@ reduce() to return fewer elements of our RDD.
 rdd.reduce(lambda x,y: x+y)
 # output 15
 ```
+
+## Associative and Commutative Properties
+
+The commutative property allows for all parallel tasks to execute and conclude without waiting for another task to complete.
+
+The associative property allows Spark to partition and distribute our data to multiple nodes because the result will stay the same no matter how tasks are grouped.
+
