@@ -3,6 +3,7 @@
 - [Transformations](#Transformation)
 - [Actions](#Actions)
 - [Associative and Commutative Properties](#Associative-and-Commutative-Properties)
+- [Broadcast Variables](#Broadcast-Variables)
 Resilient Distributed Datasets.
 
 ![alt text](https://github.com/LamPhuocGiau/Data_Engineer/blob/submain/Theories/Images/Resilient-distributed-datasets.png)
@@ -106,4 +107,25 @@ rdd.reduce(lambda x,y: x+y)
 The commutative property allows for all parallel tasks to execute and conclude without waiting for another task to complete.
 
 The associative property allows Spark to partition and distribute our data to multiple nodes because the result will stay the same no matter how tasks are grouped.
+
+## Broadcast Variables
+
+Information that is made available to all nodes is what Spark calls broadcast variables.
+
+```
+# list of states
+states = ['FL', 'NY', 'TX', 'CA', 'NY', 'NY', 'FL', 'TX']
+# convert to RDD
+states_rdd = spark.sparkContext.parallelize(states)
+# dictionary of regions
+region = {"NY":"East", "CA":"West", "TX":"South", "FL":"South"}
+# broadcast region dictionary to nodes
+broadcast_var = spark.sparkContext.broadcast(region)
+# map regions to states
+result = states_rdd.map(lambda x: broadcast_var.value[x])
+# view first four results
+result.take(4)
+# output : [‘South’, ‘East’, ‘South’, ‘West’]
+```
+
 
