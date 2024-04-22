@@ -31,3 +31,15 @@ parallelize(): create an RDDfrom data saved locally.
 rdd_txt = spark.sparkContext.textFile("file_name.txt", 10)
 ```
 TextFile(): create an RDD.
+
+**Verify the number of partition**.
+
+```
+rdd_txt.getNumPartitions()
+# output: 10
+```
+**End SparkSession**.
+
+```
+spark.stop()
+```
